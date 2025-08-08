@@ -218,6 +218,76 @@ data = data.assign(
 #a=data.fixed_country.value_counts().reset_index().head(20)['count'].sum() / data.shape[0]
 #print(a)
 
-#We 
+#We review countries after fixing the data
 data['fixed_country'].unique()
 
+
+
+
+
+
+######
+"""
+Ejercicio 1
+
+Queremos formatear los datos correctamente para prepararlos de cara a las visualizaciones solicitadas en los siguientes ejercicios. Para ello, se pide:
+
+- Leer los sets de datos proporcionados
+- Aplicar el tipo de cambio a las columnas de salario y bonus para que todo quede representado en USD
+- Eliminar datos con poca muestra que introducen ruido:
+    o Registros de las edades "under 18" y "65 or over".
+    o Registros con salarios anuales (sin bonus) por encima de los 200K dólares.
+    o Registros con géneros distintos a "Man" o "Woman".
+- Imputar los valores faltantes (si los hay) de salario y bonus a 0.
+"""
+#we read fx file
+fx= pd.read_csv('../data/exchange_rates.csv')
+fx.head()
+
+#to convert all salaries and bonuses into USD we will join both datasets
+
+data_usd=pd.merge(
+    data,
+    fx,
+    on='currency',
+    how='left'
+)
+
+#create 3 new columns : salary in usd, bonus in usd and sum of previous one
+
+
+data_usd['annual_salary_usd']=data_usd['annual_salary']*data_usd['exchange_rate'] 
+data_usd['bonus_salary_usd']=data_usd['bonus_salary']*data_usd['exchange_rate'] 
+data_usd['total_salary_usd']=(data_usd['bonus_salary']+data_usd['annual_salary'])*data_usd['exchange_rate']
+
+#To eliminate data, we will filter data we want to keep and asign it 
+#to a new dataset
+
+
+data_usd['age'].unique()
+data_usd['gender'].unique()
+
+
+#We keep
+# - age not int 'under 18' and '65 or over'
+#  salaries lower that 200K USD
+# gender other than 'man' and 'women'
+
+
+data_filtered = data_usd[
+    (~data_usd['age'].isin(['under 18', '65 or over'])) &
+    (data_usd['annual_salary_usd'] <= 200000) &
+    (data_usd['gender'].isin(['Man', 'Woman']))
+]
+
+#we fill missing salaries and bonus with 0
+
+data_filtered.loc[:, 'annual_salary'] = data_filtered['annual_salary'].fillna(0)
+data_filtered.loc[:, 'bonus_salary'] = data_filtered['bonus_salary'].fillna(0)
+data_filtered.loc[:, 'annual_salary_usd'] = data_filtered['annual_salary_usd'].fillna(0)
+data_filtered.loc[:, 'bonus_salary_usd'] = data_filtered['bonus_salary_usd'].fillna(0)
+data_filtered.loc[:, 'total_salary_usd'] = data_filtered['total_salary_usd'].fillna(0)
+
+
+#We export the filtered data, as it will be used in exercise 2 to 5
+data_filtered.to_csv('../data/cleanSalaries.csv')
