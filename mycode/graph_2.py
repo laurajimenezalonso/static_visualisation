@@ -21,7 +21,8 @@ plt.bar(data_ej2.fixed_country, data_ej2.total_salary_usd)
 plt.title("Salario medio por divisa")
 plt.xlabel("Pais")
 plt.ylabel("Salario medio ($)")
-plt.yticks(range(0, 200000, 25000), labels=[f"{number:,.0f}" for number in range(0, 200000, 25000)])
+plt.yticks(range(0, 200000, 25000), 
+           labels=[f"{number:,.0f}" for number in range(0, 200000, 25000)])
 
 plt.show()
 
@@ -35,5 +36,7 @@ plt.show()
     scale_y_continuous(labels=lambda l: [f'{v:,.0f}' for v in l]) 
     
 )
+
+
 
 
