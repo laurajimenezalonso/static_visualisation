@@ -18,11 +18,11 @@ data_ej2=(
 
 #usando matplotlib
 plt.bar(data_ej2.fixed_country, data_ej2.total_salary_usd)
-plt.title("Salario medio por divisa")
-plt.xlabel("Pais")
-plt.ylabel("Salario medio ($)")
+plt.title('Salario medio por divisa')
+plt.xlabel('Pais')
+plt.ylabel('Salario medio ($)')
 plt.yticks(range(0, 200000, 25000), 
-           labels=[f"{number:,.0f}" for number in range(0, 200000, 25000)])
+           labels=[f"${number//1000:,.0f}K" for number in range(0, 200000, 25000)])
 
 plt.show()
 
@@ -30,10 +30,10 @@ plt.show()
 (
     ggplot(data_ej2, aes(x='fixed_country', y='total_salary_usd')) +
     geom_bar(stat='identity', fill='blue') +
-    ggtitle("Salario medio por divisa") +
-    xlab("País") +
-    ylab("Salario medio ($)") +
-    scale_y_continuous(labels=lambda l: [f'{v:,.0f}' for v in l]) 
+    ggtitle('Salario medio por divisa') +
+    xlab('País') +
+    ylab('Salario medio ($)') +
+    scale_y_continuous(labels=lambda l: [f'${v//1000:,.0f}K' for v in l]) 
     
 )
 
