@@ -290,4 +290,4 @@ data_filtered.loc[:, 'total_salary_usd'] = data_filtered['total_salary_usd'].fil
 
 
 #We export the filtered data, as it will be used in exercise 2 to 5
-data_filtered.to_csv('../data/cleanSalaries.csv')
+data_filtered.to_csv('../data/cleanSalaries.csv', index=False)
