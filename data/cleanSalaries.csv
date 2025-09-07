@@ -6583,7 +6583,7 @@ age,industry,title,annual_salary,bonus_salary,currency,country,state,city,overal
 25-34,Health care,Patient Access Associate 3,40000.0,1000.0,USD,United States,Virginia,Fairfax County,8 - 10 years,2 - 4 years,College degree,Woman,united states,1.0,40000.0,1000.0,41000.0
 45-54,Education (Higher Education),Web Developer,90000.0,0.0,USD,United States,Washington,Olympia,21 - 30 years,21 - 30 years,College degree,Woman,united states,1.0,90000.0,0.0,90000.0
 35-44,Government and Public Administration,Press officer,90000.0,0.0,USD,Usa,Kansas,Overland Park,11 - 20 years,8 - 10 years,Master's degree,Woman,united states,1.0,90000.0,0.0,0.0
-35-44,Computing or Tech,Senior Technical Writer,32000.0,0.0,EUR,Romania,,Bucharest,11 - 20 years,11 - 20 years,Master's degree,Woman,romania,1.03929,33257.28,0.0,0.0
+35-44,Computing or Tech,Senior Technical Writer,32000.0,0.0,EUR,Romania,,Bucharest,11 - 20 years,11 - 20 years,Master's degree,Woman,denmark,1.03929,33257.28,0.0,0.0
 45-54,Computing or Tech,Senior Software Engineer,114300.0,0.0,USD,United States,Massachusetts,Boston,21 - 30 years,21 - 30 years,College degree,Man,united states,1.0,114300.0,0.0,0.0
 25-34,Airline,Training Program Lead,80000.0,1000.0,USD,USA,Texas,Dallas,11 - 20 years,8 - 10 years,College degree,Woman,united states,1.0,80000.0,1000.0,81000.0
 25-34,Computing or Tech,Director of product,125000.0,0.0,USD,USA,Texas,Austin,8 - 10 years,5-7 years,Master's degree,Woman,united states,1.0,125000.0,0.0,0.0
@@ -10945,7 +10945,7 @@ age,industry,title,annual_salary,bonus_salary,currency,country,state,city,overal
 25-34,Energy,HR and Operations Manager,67500.0,0.0,USD,Cote d'Ivoire,,Abidjan,8 - 10 years,5-7 years,College degree,Woman,cote d'ivoire,1.0,67500.0,0.0,67500.0
 25-34,Media & Digital,Assistant Script Editor,25500.0,0.0,GBP,united kingdom,,Birmingham,5-7 years,5-7 years,College degree,Woman,united kingdom,1.19112,30373.559999999998,0.0,30373.559999999998
 25-34,Education (Higher Education),Project Manager,55000.0,0.0,GBP,UK,,London,8 - 10 years,5-7 years,College degree,Woman,united kingdom,1.19112,65511.6,0.0,65511.6
-18-24,Business or Consulting,Data Analyst,24000.0,1000.0,USD,"From Romania, but for an US based company",New York,Cluj-Napoca ,2 - 4 years,2 - 4 years,College degree,Man,romania,1.0,24000.0,1000.0,25000.0
+18-24,Business or Consulting,Data Analyst,24000.0,1000.0,USD,"From Romania, but for an US based company",New York,Cluj-Napoca ,2 - 4 years,2 - 4 years,College degree,Man,denmark,1.0,24000.0,1000.0,25000.0
 35-44,Transport or Logistics,Collections Manager,59000.0,3500.0,USD,United States,Tennessee,Moshiem,11 - 20 years,11 - 20 years,College degree,Woman,united states,1.0,59000.0,3500.0,62500.0
 25-34,Nonprofits,Program Manager,58000.0,0.0,USD,Somalia,,,8 - 10 years,2 - 4 years,Master's degree,Woman,somalia,1.0,58000.0,0.0,58000.0
 25-34,Media & Digital,Production Coordinator,33000.0,0.0,GBP,United Kingdom,,London,8 - 10 years,8 - 10 years,College degree,Woman,united kingdom,1.19112,39306.96,0.0,39306.96
@@ -11248,7 +11248,7 @@ age,industry,title,annual_salary,bonus_salary,currency,country,state,city,overal
 25-34,Engineering or Manufacturing,Senior Quality Engineer,110000.0,0.0,USD,United States,Massachusetts,Boston area,5-7 years,5-7 years,College degree,Woman,united states,1.0,110000.0,0.0,0.0
 25-34,Sales,Account Executive,55000.0,55000.0,CAD,Canada,,Toronto,2 - 4 years,2 - 4 years,College degree,Man,canada,0.750496,41277.280000000006,41277.280000000006,82554.56000000001
 45-54,Law,Librarian,40000.0,0.0,GBP,UK,,Tunbridge Wells,21 - 30 years,21 - 30 years,Master's degree,Woman,united kingdom,1.19112,47644.799999999996,0.0,0.0
-25-34,Health care,Lead Information Analyst,31000.0,0.0,GBP,Englang,,Norwich,8 - 10 years,2 - 4 years,Master's degree,Woman,englang,1.19112,36924.72,0.0,36924.72
+25-34,Health care,Lead Information Analyst,31000.0,0.0,GBP,Englang,,Norwich,8 - 10 years,2 - 4 years,Master's degree,Woman,united kingdom,1.19112,36924.72,0.0,36924.72
 18-24,Business or Consulting,Consultant- Data Analytics ,56000.0,8000.0,GBP,United Kingdom,,London,2 - 4 years,1 year or less,Some college,Woman,united kingdom,1.19112,66702.72,9528.96,76231.68
 25-34,AmeriCorps,Americorps Member,15400.0,0.0,USD,United States,Massachusetts,Boston,5-7 years,1 year or less,Master's degree,Woman,united states,1.0,15400.0,0.0,0.0
 25-34,Nonprofits,Finance Manager,60000.0,0.0,USD,United States,Vermont,Waitsfield,8 - 10 years,5-7 years,College degree,Woman,united states,1.0,60000.0,0.0,0.0
@@ -17489,7 +17489,7 @@ age,industry,title,annual_salary,bonus_salary,currency,country,state,city,overal
 35-44,Recruitment or HR,HR Manager,80000.0,0.0,USD,USA,New Jersey,Parsippany ,8 - 10 years,8 - 10 years,College degree,Woman,united states,1.0,80000.0,0.0,0.0
 25-34,Computing or Tech,Marketing Manager,47500.0,0.0,GBP,United Kingdom,,Brighton,8 - 10 years,8 - 10 years,College degree,Woman,united kingdom,1.19112,56578.2,0.0,0.0
 35-44,Computing or Tech,Director Product Design,175000.0,0.0,USD,U.S.,Massachusetts,Boston,21 - 30 years,11 - 20 years,Master's degree,Woman,united states,1.0,175000.0,0.0,175000.0
-25-34,Computing or Tech,Principal Product Designer,85000.0,0.0,GBP,Romania,,"Remote, from a small city in Romania",11 - 20 years,11 - 20 years,High School,Man,romania,1.19112,101245.2,0.0,101245.2
+25-34,Computing or Tech,Principal Product Designer,85000.0,0.0,GBP,Romania,,"Remote, from a small city in Romania",11 - 20 years,11 - 20 years,High School,Man,denmark,1.19112,101245.2,0.0,101245.2
 25-34,Media & Digital,Editorial Director,33000.0,2000.0,GBP,United Kingdom,,-,5-7 years,2 - 4 years,College degree,Man,united kingdom,1.19112,39306.96,2382.24,41689.2
 35-44,Health care,Nurse practitioner,105000.0,0.0,USD,USA,Maryland,Havre de Grace ,11 - 20 years,2 - 4 years,Master's degree,Woman,united states,1.0,105000.0,0.0,0.0
 25-34,Engineering or Manufacturing,Petroleum Engineer,84000.0,0.0,USD,Ecuador,,Quito,2 - 4 years,2 - 4 years,College degree,Man,ecuador,1.0,84000.0,0.0,0.0
@@ -18216,7 +18216,7 @@ age,industry,title,annual_salary,bonus_salary,currency,country,state,city,overal
 35-44,Computing or Tech,Senior Software Developer,185000.0,0.0,USD,USA,Texas,Austin,11 - 20 years,11 - 20 years,High School,Man,united states,1.0,185000.0,0.0,0.0
 25-34,Association,Senior Government Relations Coordinator,67000.0,500.0,USD,United States,Virginia,Alexandria,2 - 4 years,2 - 4 years,College degree,Woman,united states,1.0,67000.0,500.0,67500.0
 35-44,Recruitment or HR,HR generalist ,55000.0,0.0,USD,US ,Tennessee,Nashville ,11 - 20 years,5-7 years,College degree,Woman,united states,1.0,55000.0,0.0,55000.0
-35-44,Computing or Tech,RnD Manager,72120.0,0.0,USD,Romania,,Cluj-Napoca,11 - 20 years,11 - 20 years,Master's degree,Woman,romania,1.0,72120.0,0.0,0.0
+35-44,Computing or Tech,RnD Manager,72120.0,0.0,USD,Romania,,Cluj-Napoca,11 - 20 years,11 - 20 years,Master's degree,Woman,denmark,1.0,72120.0,0.0,0.0
 45-54,Government and Public Administration,IT Architect,105000.0,12000.0,USD,USA,Utah,Salt Lake City,21 - 30 years,21 - 30 years,Master's degree,Man,united states,1.0,105000.0,12000.0,117000.0
 25-34,Retail,Merchant Specialist,34000.0,0.0,USD,United States,Wisconsin,Milwaukee,11 - 20 years,2 - 4 years,Master's degree,Woman,united states,1.0,34000.0,0.0,34000.0
 35-44,Education (Higher Education),Researcher,52000.0,0.0,USD,USA,Minnesota,St. Paul,5-7 years,5-7 years,PhD,Woman,united states,1.0,52000.0,0.0,52000.0
@@ -25694,7 +25694,7 @@ age,industry,title,annual_salary,bonus_salary,currency,country,state,city,overal
 25-34,Computing or Tech,Systems Engineer,114000.0,20000.0,USD,US,Wisconsin,Verona,2 - 4 years,2 - 4 years,Master's degree,Woman,united states,1.0,114000.0,20000.0,134000.0
 18-24,Business or Consulting,Data Management Consultant ,60000.0,2500.0,GBP,United Kingdom,,London,2 - 4 years,2 - 4 years,College degree,Woman,united kingdom,1.19112,71467.2,2977.7999999999997,74445.0
 35-44,Engineering or Manufacturing,Project Engineer,75000.0,3500.0,USD,United States,Missouri,Kansas City,5-7 years,5-7 years,College degree,Woman,united states,1.0,75000.0,3500.0,78500.0
-18-24,Computing or Tech,Technology Associate,8600.0,980.0,EUR,Romania,,Bucharest,1 year or less,1 year or less,College degree,Man,romania,1.03929,8937.894,1018.5042000000001,9956.3982
+18-24,Computing or Tech,Technology Associate,8600.0,980.0,EUR,Romania,,Bucharest,1 year or less,1 year or less,College degree,Man,denmark,1.03929,8937.894,1018.5042000000001,9956.3982
 35-44,Computing or Tech,Program Manager,138000.0,5000.0,USD,USA,Texas,Houston,21 - 30 years,21 - 30 years,College degree,Woman,united states,1.0,138000.0,5000.0,143000.0
 25-34,"Marketing, Advertising & PR",Data Scientist,52000.0,0.0,USD,US,Tennessee,Nashville,5-7 years,2 - 4 years,Master's degree,Man,united states,1.0,52000.0,0.0,0.0
 25-34,Computing or Tech,SysAdmin,38000.0,0.0,EUR,Spain,,Barcelona,8 - 10 years,2 - 4 years,Some college,Man,spain,1.03929,39493.020000000004,0.0,39493.020000000004

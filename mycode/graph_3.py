@@ -22,17 +22,18 @@ max_x = int(np.ceil(max_salary / 25000.0)) * 25000
 plt.figure(figsize=(8, 12))
 plt.suptitle('Distribución de salario por edad')
 
-# Recorremos todas las edades ahore
+# Recorremos todas las edades 
 for i, element in enumerate(age_order):    
 
     # Subplot
     ax = plt.subplot2grid((len(age_order), 1), (i, 0))
 
     
-    # Pintamos el gráfico normalmente
+    # Pintamos el gráfico 
     ax.hist(
         data[data['age'] == element].loc[:, 'annual_salary_usd'].values,
         color= colors[i],
+        bins=20,
         alpha=0.2,
         edgecolor="black")
     

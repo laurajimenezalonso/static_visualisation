@@ -25,6 +25,7 @@ education_order = [
 education_labels = [ 
     'High School',
     'Some college',
+    'College degree',
     "Maste's degree",
     'Professional degree',
     'PhD'
@@ -40,7 +41,7 @@ pivot_data_ej5 = data_ej5.pivot(
 )
 #print(pivot_data_ej5)
 
-# Reordenamos los datos de la manera que queremos que salga en 
+# Reordenamos los datos de la manera que queremos que salga en el orden que queremos
 pivot_data_ej5 = pivot_data_ej5.reindex(
     index=age_order, 
     columns=education_order
