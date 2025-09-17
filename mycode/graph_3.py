@@ -65,3 +65,52 @@ for i, element in enumerate(age_order):
 plt.tight_layout()
 
 plt.show()
+
+
+
+
+import seaborn as sns
+
+# Orden y colores
+age_order = ['18-24', '25-34', '35-44', '45-54', '55-64']
+colors = ['indianred','mediumseagreen','cornflowerblue','gold','violet']
+age_colors = dict(zip(age_order, colors))
+
+# Rango máximo del eje X
+max_salary = data['annual_salary_usd'].max()
+max_x = int(np.ceil(max_salary / 25000.0)) * 25000
+xticks_vals = range(0, max_x + 1, 25000)
+xticks_labels = [f'${t//1000}K' for t in xticks_vals]
+
+# Usamos FacetGrid (una columna, faceteado por edad)
+g = sns.FacetGrid(
+    data, 
+    row="age", 
+    hue="age", 
+    palette=age_colors, 
+    row_order=age_order,
+    sharex=True, 
+    sharey=False, 
+    height=2, aspect=4
+)
+
+# Densidad por cada edad
+g.map(sns.kdeplot, "annual_salary_usd", fill=True, alpha=0.2)
+
+# Líneas verticales de la mediana
+for ax, age in zip(g.axes.flatten(), age_order):
+    median_val = data.loc[data['age'] == age, 'median_salary_age'].iloc[0]
+    ax.axvline(median_val, color=age_colors[age], linestyle="--", linewidth=1.5)
+
+    # Configuración de ticks
+    ax.set_xticks(xticks_vals)
+    ax.set_xticklabels(xticks_labels, rotation=0)
+    ax.set_xlabel("Salario anual (sin bonus)")
+    ax.set_yticks([])
+    ax.set_ylabel("Distribución")
+
+# Título general
+plt.subplots_adjust(top=0.92)
+g.fig.suptitle("Distribución de salario por edad")
+
+plt.show()
