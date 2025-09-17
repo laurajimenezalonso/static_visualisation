@@ -97,8 +97,8 @@ plt.title('Brecha salarial')
 
 # Leyenda 
 handles, labels = plt.gca().get_legend_handles_labels()
-label_map = {"Man": "Hombre", "Woman": "Mujer"}
-labels = [label_map.get(l, l) for l in labels]
+label_map = {"man": "Hombre", "woman": "Mujer", "Man": "Hombre", "Woman": "Mujer"}
+labels = [label_map.get(l.lower(), l) if hasattr(l, "lower") else l for l in labels]
 
 plt.legend(handles, labels, title="Género")
 
