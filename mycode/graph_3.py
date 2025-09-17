@@ -114,3 +114,4 @@ plt.subplots_adjust(top=0.92)
 g.fig.suptitle("Distribución de salario por edad")
 
 plt.show()
+
